@@ -1,5 +1,24 @@
 html, 
 body {
+    font-family: 'Roboto';
     margin: 0;
     padding: 0;
+}
+
+/* Typography */
+
+/* layout */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container-left {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
 }
