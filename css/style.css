@@ -1,3 +1,7 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 html, 
 body {
     font-family: 'Roboto';
@@ -7,18 +11,48 @@ body {
 
 /* Typography */
 
+.header-container-left p {
+    font-size: 0.85rem;
+    color: #090909;
+    font-weight: 700;
+}
+
+li a {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0E0E0E;
+}
+
 /* layout */
 
-header {
+body {
     display: flex;
+    flex-direction: column;
+
+}
+
+header, .header-container-left, nav ul {
+    display: flex;
+}
+
+header, .header-container-left{
+    align-items: center;
+}
+
+header {
     justify-content: space-between;
+    margin: 1.25em;
+
 }
 
 .header-container-left {
-    display: flex;
+    column-gap: 0.2em;
+    flex-basis: 170px;
 }
 
 nav ul {
-    display: flex;
     list-style: none;
+    flex-basis: 200px;
+    column-gap: 1.5em;
 }
