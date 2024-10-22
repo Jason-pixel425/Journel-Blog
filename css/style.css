@@ -30,7 +30,12 @@ li a {
 
 }
 
+.hero h1, h1 {
+    font-size: 2.1875rem;
+}
+
 .hero h1 {
+
     text-decoration: underline;
 }
 
@@ -73,6 +78,7 @@ body {
     height: auto;
     min-height: 100vh;
     
+    
 }
 
 header, .header-container-left{
@@ -98,9 +104,16 @@ nav ul {
     column-gap: 1.5em;
 }
 
+.profile-container {
+    display: flex;
+    /* flex-direction: column; */
+   
+}
+
 main {
     flex-direction: column;
     width: 100%;
+    margin: 1.25em;
 }
 
 .hero-container{
@@ -126,7 +139,7 @@ main {
 }
 
  .blog-posts-outer-container {
-    margin: 2.5em 1.25em;
+    margin: 2.5em 0;
 } 
 
 .blog-posts-container {
@@ -195,6 +208,9 @@ article img {
     li a {
         font-size: 1em;
 
+    }
+    .profile-container {
+        flex-direction: column;
     }
 }
 
