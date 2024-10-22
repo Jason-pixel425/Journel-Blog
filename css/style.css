@@ -109,6 +109,11 @@ main {
     padding: 0.5rem 0;
 }
 
+.blog-posts-container {
+    display: grid;
+    
+}
+
 footer {
     flex-direction: column;
     align-self: end;
