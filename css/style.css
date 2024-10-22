@@ -44,12 +44,11 @@ footer {
 /* layout */
 
 
-header, .header-container-left, .hero, nav ul, footer, main {
+header, body, .header-container-left, .hero, nav ul, footer, main {
     display: flex;
 }
 
 body {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     line-height: 1.5em;
@@ -115,7 +114,6 @@ main {
 
 footer {
     flex-direction: column;
-    justify-self: flex-end;
     align-items: center;
     padding: 2.5rem 0 2.5rem 0;
 
