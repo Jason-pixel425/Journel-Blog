@@ -49,18 +49,17 @@ header, .header-container-left, .hero, nav ul, footer, main {
 }
 
 body {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     line-height: 1.5em;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto minmax(480px, 1fr) auto;
     height: auto;
     min-height: 100vh;
     
 }
 
-
 header, .header-container-left{
-    align-self: start;
+
     align-items: center;
     justify-content: center;
 }
@@ -111,12 +110,12 @@ main {
 
 .blog-posts-container {
     display: grid;
-    
+
 }
 
 footer {
     flex-direction: column;
-    align-self: end;
+    justify-self: flex-end;
     align-items: center;
     padding: 2.5rem 0 2.5rem 0;
 
