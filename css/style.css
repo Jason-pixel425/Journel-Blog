@@ -76,12 +76,15 @@ footer {
 
 /* layout */
 
-header, body, .header-container-left, .hero, nav ul, footer, main, .profile-container, .profile-intro-container {
+header, body, .header-container-left, article,  .hero, nav ul, footer, main, .profile-container, .profile-intro-container {
     display: flex;
 }
 
-body {
+.profile-container, body, .profile-intro-container, main, .hero, article, footer {
     flex-direction: column;
+}
+
+body {
     justify-content: space-between;
     line-height: 1.5em;
     height: auto;
@@ -89,7 +92,6 @@ body {
 }
 
 header, .header-container-left{
-
     align-items: center;
     justify-content: center;
 }
@@ -111,19 +113,12 @@ nav ul {
     column-gap: 1.5em;
 }
 
-.profile-container {
-    flex-direction: column;
-    
-}
-
 .profile-intro-container {
     max-width: 1000px;
-    flex-direction: column;
      margin: 0 auto;
 }
 
 main {
-    flex-direction: column;
     max-width: 100%;
     margin: 1.25em;
 }
@@ -135,7 +130,6 @@ main {
 
 .hero {
     margin: 0 auto;
-    flex-direction: column;
     justify-content: flex-end;
     padding: 1.25em;
 
@@ -169,8 +163,6 @@ main {
 }
 
 article {
-    display: flex;
-    flex-direction: column;
     max-width: 619px;
 }
 
@@ -183,7 +175,6 @@ article time {
 }
 
 footer {
-    flex-direction: column;
     align-items: center;
     padding: 1.01rem 0 1.01rem 0;
 
